@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dashboard section background */
+.bg-dashboard-section {
+  background-color: #c0c8cf !important;
+}
+
+/* Dark mode overrides */
+.dark .bg-dashboard-section {
+  /* darker neutral for cards in dark */
+  background-color: #1f2937 !important; /* gray-800 */
+}
+
+/* Optional: smooth transitions when toggling theme */
+html, body, #root {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* Faded grey background color with your image overlay */
+  background-color: #c0c8cf; /* faded grey */
+  background-image: url('DESKTOP-QR.png'); /* your image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: opacity 0.5s;
+}

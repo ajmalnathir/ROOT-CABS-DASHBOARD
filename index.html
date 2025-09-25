@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="shortcut icon" href="Root cabs.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/.src/index.css"/>
+    <title>Root Cabs Analytics Dashboard</title>
+  
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <div class="loader-wrapper">
+      <img src="Root cabs.png" width="100px" alt="loader gif" />
+      <img src="Untitled design (1).gif" width="100px" alt="loader gif" />
+    </div>
+    <script>
+      // Hide preloader after 6 seconds
+      window.addEventListener('load', function() {
+        var loader = document.querySelector('.loader-wrapper');
+        if (loader) {
+          setTimeout(() => {
+            loader.style.opacity = '0';
+            setTimeout(() => {
+              loader.style.display = 'none';
+            }, 500); // Wait for fade out transition
+          }, 1000); // Show loader for 1 second
+        }
+      });
+    </script>
+    <style>
+      .x-icon {
+        width: 20px;
+        height: 20px;
+      }
+    </style>
+      </div>
+    </div>
+  </body>
+</html>
